@@ -1,2 +1,43 @@
 # hardware_technology_stack
-Hardware Development Technology Stack
+
+本仓库存放硬件开发相关资料、嵌入式项目代码、传感器测试记录、PCB 文件和调试文档，主要面向嵌入式开发、物联网硬件开发和智能硬件原型验证。
+
+为方便管理和查找，每个一级文件夹内的内容应相对独立。文件命名、代码命名和提交记录需遵循相应规范。每个新加入的文件夹，需在资料目录处添加其文件结构简介。
+
+## 文件管理
+
+### 命名规范
+
+公文中，标题通常有如下几种模式：
+
+- Title Case：所有单词的首字母大写，介词除外，其他字母小写，单词之间用空格隔开。
+- Sentence Case：句首单词的首字母大写，其他单词的首字母小写，单词之间用空格隔开。
+- Upper Case：所有单词全大写。
+- Lower Case：所有单词全小写。
+
+编程中，文件和变量命名通常有如下几种模式：
+
+- Camel Case：首个单词小写，后续单词首字母大写，单词之间不使用连接符。
+- Pascal Case：所有单词首字母大写，单词之间不使用连接符。
+- Kebab Case：所有单词全小写，单词之间用短横线 `-` 隔开。
+- Snake Case：所有单词全小写，单词之间用下划线 `_` 隔开。
+- Constant Case：所有单词全大写，单词之间用下划线 `_` 隔开。
+
+| 对象 | 中文 | 小写英文 | 数字 | 连接符 | 推荐格式 |
+|---|---|---|---|---|---|
+| 文件夹 | ✅ | ✅ | ✅ | `-` | Kebab Case |
+| 媒体文件 | ✅ | ✅ | ✅ | `-` | Kebab Case |
+| 文本文档 | ✅ | ✅ | ✅ | `-` | Kebab Case |
+| 代码文件 | ❌ | ✅ | ✅ | `_` | Snake Case |
+| 类名 | ❌ | ✅ | ✅ | ❌ | Pascal Case |
+| 函数名 | ❌ | ✅ | ✅ | `_` | Snake Case |
+| 常量 | ❌ | ❌ | ✅ | `_` | Constant Case |
+
+### 文件夹命名示例
+
+```text
+esp32-sensor-test
+stm32-car-controller
+radxa-audio-base
+pcb-design
+serial-debug-notes
