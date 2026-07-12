@@ -1,17 +1,17 @@
-# Web Server
+# Web 服务器
 
-The web server is a great way to show results in the ESP32 training camp. It lets a phone or computer control the board directly from a browser.
+Web 服务器是 ESP32 训练营里非常适合展示成果的一节。它能让手机或电脑通过浏览器直接控制开发板。
 
-## 1. What It Can Do
+## 1. 能做什么
 
-- Control an LED from the browser
-- Show sensor data
-- Provide a simple configuration page
-- Act as a local control panel
+- 浏览器控制 LED
+- 显示传感器数据
+- 提供简单配置页面
+- 作为局域网控制面板
 
-## 2. Learning Goals
+## 2. 学习重点
 
-1. Build a minimal web page.
-2. Handle button clicks.
-3. Connect the page with hardware actions.
-4. Understand request and response flow.
+1. 会搭一个最小网页。
+2. 会处理按钮点击。
+3. 会把页面和硬件动作连起来。
+4. 会理解请求和响应。

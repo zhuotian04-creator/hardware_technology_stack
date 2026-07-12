@@ -1,17 +1,17 @@
-# Debugging
+# 调试方法
 
-Debugging is a skill that should be trained separately. People who build real projects are not people who never make mistakes. They are people who know how to find the problem quickly.
+调试能力是训练营里必须单独训练的能力。真正会做项目的人，不是从不出错，而是知道怎么快速定位问题。
 
-## 1. Common Debugging Methods
+## 1. 常见调试手段
 
-- Serial printing
-- Commenting out sections
-- Testing one module at a time
-- Watching hardware behavior
-- Checking power and wiring
+- 串口打印
+- 逐步注释
+- 单模块验证
+- 观察硬件反应
+- 检查供电和接线
 
-## 2. Learning Goals
+## 2. 学习目标
 
-1. Narrow the problem first.
-2. Check serial output first.
-3. Confirm hardware before blaming code.
+1. 先缩小问题范围。
+2. 先看串口输出。
+3. 先确认硬件，再怀疑代码。

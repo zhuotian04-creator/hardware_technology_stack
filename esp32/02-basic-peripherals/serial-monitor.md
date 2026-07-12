@@ -1,16 +1,16 @@
-# Serial Monitor
+# 串口监视器
 
-The serial monitor is one of the most important debugging windows in the ESP32 course. Many problems can be found by reading serial output before touching any advanced tool.
+串口监视器是 ESP32 课程里最重要的调试窗口。很多问题不需要一上来就接示波器，先看串口输出就能定位一大半。
 
-## 1. What It Can Do
+## 1. 串口能做什么
 
-- Print debug messages
-- Show sensor values
-- Verify whether the program is running
-- Check whether initialization succeeds
-- Observe state changes
+- 输出调试信息
+- 查看传感器数据
+- 验证程序是否在运行
+- 检查初始化是否成功
+- 观察状态切换过程
 
-## 2. Basic Use
+## 2. 基本用法
 
 ```cpp
 void setup() {
@@ -24,15 +24,15 @@ void loop() {
 }
 ```
 
-## 3. Debugging Habits
+## 3. 调试建议
 
-1. Print key messages in `setup()`.
-2. Add clear messages for each major step.
-3. Check the baud rate when output looks wrong.
-4. Keep output simple and useful.
+1. 从 `setup()` 开始打印关键信息。
+2. 给每个阶段加明显的提示文字。
+3. 出现异常时先确认串口波特率是否一致。
+4. 保持输出简洁，不要一上来打印太多无关内容。
 
-## 4. Good Habits to Build
+## 4. 你应该形成的习惯
 
-1. Plan what to print before writing code.
-2. Read serial output before changing code.
-3. Treat serial output as the first debugging tool.
+1. 写程序时先想好如何打印关键节点。
+2. 出问题时先看串口，再改代码。
+3. 把串口输出当成训练营中的“第一调试手段”。

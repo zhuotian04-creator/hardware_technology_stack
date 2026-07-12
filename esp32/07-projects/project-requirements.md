@@ -1,19 +1,19 @@
-# Project Requirements
+# 项目需求
 
-Project requirements are the starting point for integrated work. If the requirements are clear, it becomes easier to choose modules, sensors, and communication methods.
+项目需求是综合项目的起点。先把需求写清楚，后面才知道该选哪些模块、哪些传感器、哪些通信方式。
 
-## 1. What Requirements Should Include
+## 1. 需求应该包含什么
 
-1. Project goal
-2. Inputs and outputs
-3. Feature list
-4. Usage scenario
-5. Power method
-6. Size and structure limits
-7. Communication method
+1. 项目目标
+2. 输入输出
+3. 功能列表
+4. 使用场景
+5. 供电方式
+6. 体积和结构限制
+7. 通信方式
 
-## 2. Learning Goals
+## 2. 学习目标
 
-1. Define the problem clearly.
-2. Choose hardware and software after that.
-3. Start coding only after the plan makes sense.
+1. 先把问题定义清楚。
+2. 再选硬件和软件方案。
+3. 最后再开始写代码。

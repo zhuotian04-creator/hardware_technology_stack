@@ -1,23 +1,23 @@
 # UART
 
-UART is one of the easiest communication protocols to start with because it is closely related to the serial monitor.
+UART 是最适合训练营前期接触的通信协议之一，因为它和串口监视器关系最直接。
 
-## 1. What UART Can Do
+## 1. UART 能做什么
 
-- Exchange debug data with a computer
-- Talk to GPS modules
-- Talk to voice modules
-- Communicate with serial-style modules
+- 和电脑交换调试数据
+- 和 GPS 模块通信
+- 和语音模块通信
+- 和串口类外设通信
 
-## 2. Basic Idea
+## 2. 基本概念
 
-UART usually needs:
+UART 通常只需要：
 
 - `TX`
 - `RX`
 - `GND`
 
-## 3. Example Idea
+## 3. 示例思路
 
 ```cpp
 HardwareSerial my_serial(1);
@@ -33,9 +33,9 @@ void loop() {
 }
 ```
 
-## 4. What Learners Should Know
+## 4. 你应该掌握什么
 
-1. What TX and RX mean.
-2. Why common ground is required.
-3. What baud rate is.
-4. Why hardware serial is more stable than software simulation.
+1. TX 和 RX 分别是什么意思。
+2. 为什么串口通信要共地。
+3. 什么是波特率。
+4. 为什么硬件串口比软件模拟更稳定。

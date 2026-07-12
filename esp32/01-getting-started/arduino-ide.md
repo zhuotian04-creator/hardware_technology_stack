@@ -1,105 +1,105 @@
-# Arduino IDE Setup
+# Arduino IDE 安装与配置
 
-Arduino IDE is the best starting environment for beginners in the ESP32 training camp.
+Arduino IDE 是 ESP32 训练营最适合新手的开发环境。
 
-It is simple to install, easy to understand, and gives fast feedback for the full loop of writing code, compiling, uploading, and checking serial output.
+它的优点是安装简单、界面直观、教程多，而且可以把“写代码、编译、上传、看串口输出”这条学习闭环很快跑起来。
 
-## 1. Install Arduino IDE
+## 1. 安装 Arduino IDE
 
-### 1.1. Download
+### 1.1. 下载
 
-1. Open the [Arduino official download page](https://www.arduino.cc/en/software)
-2. Download `Arduino IDE 2.x`
-3. Install and launch the program
+1. 打开 [Arduino 官方下载页](https://www.arduino.cc/en/software)
+2. 下载 `Arduino IDE 2.x`
+3. 完成安装并启动程序
 
-### 1.2. First Launch
+### 1.2. 首次启动
 
-Learners should get familiar with:
+首次启动后，可以先熟悉这些位置：
 
-- Menu bar
-- Side tool area
-- Editor area
-- Bottom output area
-- Serial monitor entry
+- 菜单栏
+- 左侧工具区
+- 编辑区
+- 底部输出区
+- 串口监视器入口
 
-## 2. Add ESP32 Board Support
+## 2. 添加 ESP32 支持包
 
-Arduino IDE does not include ESP32 support by default. The ESP32 board package must be added manually.
+Arduino IDE 默认并不包含 ESP32 开发板支持，需要手动添加 Espressif 的开发板索引。
 
-### 2.1. Add the URL
+### 2.1. 添加地址
 
-1. Open `File -> Preferences`
-2. Find `Additional boards manager URLs`
-3. Add this address:
+1. 打开 `File -> Preferences`
+2. 找到 `Additional boards manager URLs`
+3. 填入下面地址：
 
 ```text
 https://espressif.github.io/arduino-esp32/package_esp32_index.json
 ```
 
-4. If there are already other URLs, separate them with commas
-5. Click `OK`
+4. 如果已有其他地址，可以用英文逗号分隔
+5. 点击 `OK` 保存
 
-### 2.2. Install the Board Package
+### 2.2. 安装开发板包
 
-1. Open `Tools -> Board -> Boards Manager`
-2. Search for `esp32`
-3. Find the package published by `Espressif Systems`
-4. Click `Install`
-5. Wait for the installation to finish
+1. 打开 `Tools -> Board -> Boards Manager`
+2. 搜索 `esp32`
+3. 找到 `Espressif Systems` 发布的 `esp32`
+4. 点击 `Install`
+5. 等待安装完成
 
-## 3. Choose the Board and Port
+## 3. 选择开发板和串口
 
-### 3.1. Board Selection
+### 3.1. 选择开发板
 
-For a common ESP32 board, the usual starting choice is:
+如果你使用的是通用 ESP32 开发板，通常可以先选：
 
 - `ESP32 Dev Module`
 
-### 3.2. Serial Port
+### 3.2. 选择串口
 
-1. Use a USB cable that supports data transfer
-2. Open `Tools -> Port`
-3. Select the matching COM port
+1. 用支持数据传输的 USB 线连接开发板
+2. 打开 `Tools -> Port`
+3. 选择对应的串口
 
-## 4. Upload the First Program
+## 4. 上传第一个程序
 
-### 4.1. Use a Simple Blink Test
+### 4.1. 用最简单的闪灯测试
 
-The classic blink example is enough for the first test.
+经典的闪灯程序就足够作为第一次测试。
 
-### 4.2. Upload Flow
+### 4.2. 上传流程
 
-1. Select the correct board
-2. Select the correct port
-3. Click `Upload`
-4. Wait for compile and flashing to finish
-5. Check whether the onboard LED blinks
+1. 选择正确的开发板
+2. 选择正确的串口
+3. 点击 `Upload`
+4. 等待编译和烧录完成
+5. 观察板载 LED 是否闪烁
 
-### 4.3. Common Problems
+### 4.3. 常见问题
 
-If upload fails, check:
+如果上传失败，先检查：
 
-- Whether the USB cable supports data
-- Whether the port is correct
-- Whether the board model is correct
-- Whether the board needs `BOOT` to be held during upload
+- USB 线是否支持数据传输
+- 串口是否选对
+- 开发板型号是否选对
+- 上传时是否需要按住 `BOOT`
 
-## 5. Serial Monitor
+## 5. 串口监视器
 
-The serial monitor is one of the most important debugging tools in the ESP32 course.
+串口监视器是 ESP32 课程里最重要的调试工具之一。
 
-It can be used to:
+它可以用来：
 
-- Show program output
-- Observe sensor data
-- Check debugging messages
-- Verify communication
+- 查看程序输出
+- 观察传感器数据
+- 检查调试信息
+- 验证通信是否正常
 
-## 6. Practical Goal
+## 6. 学习目标
 
-This page has two success conditions:
+这页先做到两个目标就够了：
 
-1. Arduino IDE recognizes the ESP32 board.
-2. A simple example can be uploaded successfully.
+1. Arduino IDE 能正常识别 ESP32 开发板。
+2. 你能成功上传一个最简单的示例程序。
 
-After that, move to `[ESP32 Basics](./esp32-basics.md)` to learn the board itself.
+完成后再进入 `[ESP32 基础认知](./esp32-basics.md)`，学习开发板本身的硬件结构和引脚概念。

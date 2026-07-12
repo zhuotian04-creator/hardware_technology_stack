@@ -1,10 +1,10 @@
 # GPIO
 
-GPIO is the most basic general-purpose input and output feature on ESP32. Once learners understand GPIO, they can begin controlling external hardware for real.
+GPIO 是 ESP32 最基础的通用输入输出功能。学会 GPIO，才能真正开始控制外部硬件。
 
-## 1. Output Mode
+## 1. 输出模式
 
-### 1.1. Blink an LED
+### 1.1. 点亮 LED
 
 ```cpp
 const int led_pin = 2;
@@ -21,16 +21,16 @@ void loop() {
 }
 ```
 
-### 1.2. Common Uses
+### 1.2. 常见用途
 
-- Indicator light
-- Relay module
-- Buzzer
-- Motor driver enable pin
+- 指示灯
+- 继电器
+- 蜂鸣器
+- 电机驱动使能脚
 
-## 2. Input Mode
+## 2. 输入模式
 
-### 2.1. Read a Button
+### 2.1. 读取按键
 
 ```cpp
 const int button_pin = 0;
@@ -50,17 +50,17 @@ void loop() {
 }
 ```
 
-## 3. Important Notes
+## 3. 需要注意的点
 
-1. Check whether the pin level is safe first.
-2. Prefer internal pull-up or pull-down when possible.
-3. Do not connect boot-related pins casually.
-4. Match the supply voltage of sensors and modules.
+1. 先确认引脚电平是否安全。
+2. 需要上拉或下拉时优先用内部电阻。
+3. 启动相关引脚不要随便乱接。
+4. 传感器和模块的供电电压要对齐。
 
-## 4. Skills to Practice
+## 4. 你应该练会什么
 
-1. Configure an output pin.
-2. Configure an input pin.
-3. Read a button state.
-4. Control an LED.
-5. Understand the difference between input and output.
+1. 配置输出脚。
+2. 配置输入脚。
+3. 读取按钮状态。
+4. 控制 LED 开关。
+5. 理解输入和输出的区别。

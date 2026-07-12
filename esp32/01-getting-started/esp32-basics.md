@@ -1,95 +1,95 @@
-# ESP32 Basics
+# ESP32 基础认知
 
-This page helps learners understand the ESP32 board before they start writing projects.
+这一页帮助学习者先认识 ESP32 开发板，而不是一上来就直接写项目。
 
-If the board, power, logic level, pins, and common limitations are clear, GPIO, sensors, and protocols will make much more sense.
+只要把开发板、电源、电平、引脚和一些常见限制搞清楚，后面的 GPIO、传感器和通信协议会更容易理解。
 
-## 1. What ESP32 Is
+## 1. ESP32 是什么
 
-ESP32 is a family of low-cost, low-power microcontrollers from Espressif. Common features include:
+ESP32 是 Espressif 推出的一系列低成本、低功耗微控制器，常见特点包括：
 
-- Built-in Wi-Fi
-- Built-in Bluetooth
-- Rich GPIO support
-- ADC, PWM, UART, I2C, and SPI
+- 内置 Wi-Fi
+- 内置蓝牙
+- 丰富的 GPIO
+- 支持 ADC、PWM、UART、I2C、SPI 等外设
 
-It is a great choice for:
+它很适合做：
 
-- Smart hardware
-- IoT devices
-- Sensor systems
-- Wireless control
-- Small embedded systems
+- 智能硬件
+- 物联网设备
+- 传感器采集
+- 无线控制
+- 小型嵌入式系统
 
-## 2. Concepts to Know First
+## 2. 先认识这些概念
 
 ### 2.1. GPIO
 
-GPIO is the general-purpose input/output pin used for buttons, LEDs, relays, buzzers, and more.
+GPIO 是最基础的通用输入输出引脚，用来接按钮、LED、继电器、蜂鸣器等设备。
 
-### 2.2. Logic Level
+### 2.2. 电平
 
-ESP32 GPIO usually works at `3.3V`.
+ESP32 的 GPIO 工作电压通常是 `3.3V`。
 
-That means:
+这意味着：
 
-1. Most pins should not receive `5V` signals directly.
-2. Level shifting is required when connecting `5V` modules.
-3. `5V` must not be connected directly to `3.3V` pins.
+1. 大多数引脚不适合直接接 `5V` 信号
+2. 连接 `5V` 模块时要特别注意电平转换
+3. 不能把 `5V` 直接加到 `3.3V` 引脚上
 
-### 2.3. Input-Only Pins
+### 2.3. 输入专用引脚
 
-Some pins are input-only and are common on higher ADC channels or special-purpose pins.
+有些引脚只能作为输入使用，常见于高位 ADC 或特殊用途场景。
 
-### 2.4. Boot-Related Pins
+### 2.4. 启动相关引脚
 
-Some pins affect the boot mode, so they should not be forced to the wrong level by external hardware.
+有些引脚会影响芯片启动模式，接外设时要避免把它们拉到错误电平。
 
-## 3. Common Peripheral Capabilities
+## 3. 常见外设能力
 
-| Capability | Use |
+| 能力 | 用途 |
 | --- | --- |
-| GPIO | Input and output control |
-| ADC | Read analog signals |
-| PWM | Brightness and speed control |
-| UART | Serial communication |
-| I2C | Sensors and expansion modules |
-| SPI | High-speed peripherals |
-| Wi-Fi | Wireless networking |
-| Bluetooth | Nearby device communication |
+| GPIO | 控制输入输出 |
+| ADC | 读取模拟信号 |
+| PWM | 控制亮度和转速 |
+| UART | 串口通信 |
+| I2C | 连接传感器和扩展模块 |
+| SPI | 连接高速外设 |
+| Wi-Fi | 无线联网 |
+| Bluetooth | 设备近距离通信 |
 
-## 4. Powering the Board
+## 4. 开发板供电
 
-### 4.1. Common Power Paths
+### 4.1. 常见供电方式
 
-ESP32 development boards are usually powered by:
+ESP32 开发板一般会通过以下方式供电：
 
-- USB power
-- 5V input pin
-- 3.3V input pin
+- USB 供电
+- 5V 引脚输入
+- 3.3V 引脚输入
 
-### 4.2. Important Notes
+### 4.2. 注意事项
 
-1. Check whether the board already includes a regulator.
-2. Never connect `5V` directly to a `3.3V` pin.
-3. Do not guess current requirements.
-4. For multi-module projects, do a power budget first.
+1. 先确认开发板是否已经带稳压电路
+2. 不要把 `5V` 直接接到 `3.3V` 引脚
+3. 不要把外设电流需求算得太乐观
+4. 如果一个项目要接很多模块，先做电源预算
 
-## 5. What to Remember
+## 5. 学完这一页后要记住什么
 
-After finishing this page, a learner should know:
+完成这一页后，学习者至少应该知道：
 
-1. What kind of board ESP32 is.
-2. What `3.3V` means.
-3. Why GPIO is not just "plug and play".
-4. Why some pins cannot be used casually.
-5. Why power planning matters.
+1. ESP32 是一块什么样的开发板
+2. `3.3V` 电平意味着什么
+3. GPIO 不只是“插线就能用”
+4. 为什么有些引脚不能随便接
+5. 开发板供电不是越随意越好
 
-## 6. Next Step
+## 6. 下一步
 
-The best next pages are:
+接下来最适合进入：
 
-- `[Arduino IDE Setup](./arduino-ide.md)`
-- `[C++ Basics for ESP32](./cpp-basics.md)`
+- `[Arduino IDE 安装与配置](./arduino-ide.md)`
+- `[ESP32 的 C++ 基础](./cpp-basics.md)`
 
-Build the environment and code basics first, then move into GPIO and peripherals.
+先把环境和代码基础打通，再进入 GPIO 和外设学习会更稳。

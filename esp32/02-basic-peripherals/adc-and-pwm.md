@@ -1,19 +1,19 @@
-# ADC and PWM
+# ADC 与 PWM
 
-This page groups analog input and PWM output together because they often appear in the same kind of project.
+这一页把模拟输入和 PWM 输出放在一起讲，因为它们通常会在同一类项目里出现。
 
 ## 1. ADC
 
-ADC converts analog voltage into a digital value.
+ADC 的作用是把模拟电压转换成数字值。
 
-### 1.1. Typical Uses
+### 1.1. 典型场景
 
-- Potentiometer
-- Light sensor
-- Analog temperature sensor
-- Battery voltage measurement
+- 电位器
+- 光敏电阻
+- 模拟温度传感器
+- 电池电压检测
 
-### 1.2. Example
+### 1.2. 示例
 
 ```cpp
 const int adc_pin = 34;
@@ -31,16 +31,16 @@ void loop() {
 
 ## 2. PWM
 
-PWM does not really lower voltage. It switches a pin very quickly to simulate an average output effect.
+PWM 不是“真的调低电压”，而是通过快速开关来模拟平均输出效果。
 
-### 2.1. Typical Uses
+### 2.1. 典型场景
 
-- LED dimming
-- Servo control
-- Motor speed control
-- Buzzer output
+- LED 调光
+- 舵机控制
+- 电机调速
+- 蜂鸣器发声
 
-### 2.2. Example
+### 2.2. 示例
 
 ```cpp
 const int pwm_pin = 2;
@@ -65,9 +65,9 @@ void loop() {
 }
 ```
 
-## 3. What Learners Should Understand
+## 3. 学习重点
 
-1. What ADC reads.
-2. What PWM solves.
-3. How raw values map to real behavior.
-4. Why pin and voltage limits matter.
+1. 知道 ADC 读到的是什么。
+2. 知道 PWM 解决的是什么问题。
+3. 能把原始数据和实际效果联系起来。
+4. 明白 ESP32 的引脚和电平限制。

@@ -1,27 +1,27 @@
-# Projects
+# 综合项目
 
-This stage combines everything learned so far into complete projects. At this point, the goal is no longer "how many topics have we seen?" but "can we build a system independently?"
+这一阶段用来把前面学到的内容整合成完整项目。训练营走到这里，重点不再是“学了几个知识点”，而是“能不能独立做出一个系统”。
 
-## 1. What This Stage Covers
+## 1. 本阶段内容
 
-### 1.1. Order
+### 1.1. 学习顺序
 
-1. [Project Requirements](./project-requirements.md)
-2. [Project Checklist](./project-checklist.md)
+1. [项目需求](./project-requirements.md)
+2. [项目检查清单](./project-checklist.md)
 
-### 1.2. Learning Goals
+### 1.2. 学习目标
 
-After this stage, learners should be able to:
+完成这一阶段后，学习者应该能够：
 
-1. Read project requirements clearly
-2. Split a project into modules
-3. Check project readiness
-4. Finish a basic integrated hardware project
+1. 读懂项目需求
+2. 拆分项目模块
+3. 给项目做功能检查
+4. 完成一个基础的综合硬件作品
 
-## 2. Good Project Ideas
+## 2. 适合做什么项目
 
-- Smart lighting
-- Environment monitoring
-- Small IoT terminal
-- Web-controlled device
-- Sensor interaction system
+- 智能灯光
+- 环境监测
+- 小型物联网终端
+- Web 控制装置
+- 传感器联动小系统

@@ -1,16 +1,16 @@
-# Project Structure
+# 项目结构
 
-Project structure decides whether code stays maintainable later. If training camp code is all dumped into one file, it will become harder and harder to change.
+项目结构决定了后期好不好维护。训练营如果一开始就把代码堆在一个文件里，后面一定会越来越难改。
 
-## 1. Good Habits
+## 1. 推荐习惯
 
-1. Put one feature in one file.
-2. Keep headers and source files separate.
-3. Centralize constants.
-4. Store resources separately.
+1. 一个功能放一个文件。
+2. 头文件和源文件分开。
+3. 常量集中管理。
+4. 资源文件单独存放。
 
-## 2. Learning Goals
+## 2. 学习目标
 
-1. Understand modularity.
-2. Understand configuration separation.
-3. Understand the boundary between main code and feature modules.
+1. 认识模块化。
+2. 认识配置分离。
+3. 认识主程序和功能模块的边界。

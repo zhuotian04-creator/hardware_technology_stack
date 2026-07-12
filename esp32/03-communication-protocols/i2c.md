@@ -1,28 +1,28 @@
 # I2C
 
-I2C is one of the most common ways to connect sensors in the training camp. It is often used for OLEDs, temperature and humidity sensors, IMUs, and IO expanders.
+I2C 是训练营里最常见的传感器连接方式之一，适合 OLED、温湿度传感器、IMU、IO 扩展器等设备。
 
-## 1. Basic Idea
+## 1. 基本概念
 
-I2C only needs two signal lines:
+I2C 只需要两根信号线：
 
 - `SDA`
 - `SCL`
 
-## 2. Typical Devices
+## 2. 典型设备
 
-- OLED display
-- Temperature and humidity sensor
-- Accelerometer and gyroscope
-- IO expander
+- OLED 显示屏
+- 温湿度传感器
+- 加速度计和陀螺仪
+- IO 扩展芯片
 
-## 3. Learning Goals
+## 3. 学习目标
 
-1. Connect SDA and SCL correctly.
-2. Understand what a device address is.
-3. Use a scan sketch to find devices.
-4. Know why pull-up resistors matter.
+1. 会连接 SDA 和 SCL。
+2. 知道什么是设备地址。
+3. 会用扫描程序找设备。
+4. 了解上拉电阻的作用。
 
-## 4. Important Note
+## 4. 重要提示
 
-I2C is great for connecting multiple devices with few wires, but the address and logic level must be checked before wiring.
+I2C 很适合“少线连接多个设备”，但接线前要先确认地址和电平兼容性。

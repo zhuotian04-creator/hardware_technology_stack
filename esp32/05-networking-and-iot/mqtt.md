@@ -1,22 +1,22 @@
 # MQTT
 
-MQTT is a very common lightweight message protocol in IoT. It is ideal for telemetry upload and remote control.
+MQTT 是物联网里非常常见的轻量级消息协议，适合设备上报和远程控制。
 
-## 1. Core Ideas
+## 1. 核心概念
 
-- Topic
-- Publish
-- Subscribe
+- 主题
+- 发布
+- 订阅
 - Broker
 
-## 2. Common Uses
+## 2. 常见用途
 
-- Upload sensor data
-- Receive remote commands
-- Connect to cloud platforms
+- 上传传感器数据
+- 接收远程控制命令
+- 对接云平台
 
-## 3. Learning Goals
+## 3. 学习重点
 
-1. Understand MQTT as a message-passing model.
-2. Design topics clearly.
-3. Understand how the device and platform split responsibilities.
+1. 知道 MQTT 是“发消息”的模型。
+2. 知道主题怎么设计。
+3. 知道设备和平台之间怎么分工。

@@ -1,29 +1,29 @@
-# Communication Protocols
+# 通信协议
 
-ESP32 is strong because it can talk to many external modules. Once learners reach this stage, they begin to understand how devices connect, how data moves, and how protocol choice affects a project.
+ESP32 的强项之一，是能和大量外部模块稳定通信。进入这一阶段后，学习者会开始真正理解“模块怎么接、数据怎么传、协议怎么选”。
 
-## 1. What This Stage Covers
+## 1. 本阶段内容
 
-### 1.1. Order
+### 1.1. 学习顺序
 
 1. [UART](./uart.md)
 2. [I2C](./i2c.md)
 3. [SPI](./spi.md)
 
-### 1.2. Learning Goals
+### 1.2. 学习目标
 
-After this stage, learners should be able to:
+完成这一阶段后，学习者应该能够：
 
-1. Use UART to talk to a computer, GPS module, or voice module
-2. Use I2C to connect OLEDs and sensors
-3. Use SPI to connect displays and SD cards
-4. Read pin and wiring requirements for each protocol
-5. Choose the right protocol for the task
+1. 使用 UART 和电脑、GPS、语音模块通信
+2. 使用 I2C 连接 OLED、传感器等模块
+3. 使用 SPI 连接显示屏和 SD 卡
+4. 读懂不同协议的引脚和接线方式
+5. 知道什么时候该选哪一种协议
 
-## 2. Quick Comparison
+## 2. 协议对比
 
-| Protocol | Wires | Speed | Typical Use |
+| 协议 | 线数 | 速度 | 典型用途 |
 | --- | --- | --- | --- |
-| UART | 2 | Medium | Serial communication, debugging |
-| I2C | 2 | Medium | Sensors, OLEDs, expansion chips |
-| SPI | 4+ | Higher | Displays, SD cards, fast peripherals |
+| UART | 2 | 中等 | 串口通信、调试 |
+| I2C | 2 | 中等 | 传感器、OLED、扩展芯片 |
+| SPI | 4+ | 较高 | 显示屏、SD 卡、高速外设 |

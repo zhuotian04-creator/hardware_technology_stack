@@ -1,33 +1,33 @@
-# Sensors
+# 传感器
 
-Sensors are the main data source in ESP32 projects. In the training camp, it is best to start with a few classic sensor categories.
+传感器是 ESP32 项目中最常见的数据来源。训练营前期最适合从几个典型类别开始学。
 
-## 1. Common Sensor Types
+## 1. 常见传感器类型
 
-### 1.1. Environment
+### 1.1. 环境类
 
 - DHT11
 - DHT22
 - BMP280
 - BME280
 
-### 1.2. Distance
+### 1.2. 距离类
 
 - HC-SR04
 - VL53L0X
 
-### 1.3. Motion
+### 1.3. 姿态类
 
 - MPU6050
 
-### 1.4. Light and Infrared
+### 1.4. 光电类
 
-- Infrared obstacle sensor
-- Photoresistor
+- 红外避障
+- 光敏传感器
 
-## 2. How to Learn Them
+## 2. 训练营里怎么学
 
-1. Read one sensor at a time.
-2. Print the result to the serial monitor.
-3. Interpret the value in real-world terms.
-4. Add an actuator later for interaction.
+1. 先读单个传感器。
+2. 再看串口输出。
+3. 再把数值转成实际意义。
+4. 最后接入执行器做联动。

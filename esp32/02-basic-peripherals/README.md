@@ -1,40 +1,40 @@
-# Basic Peripherals
+# 基础外设
 
-This stage starts the most common ESP32 hardware peripherals. The goal is not to memorize parameters, but to make LEDs, buttons, buzzers, and analog signals actually work.
+这一阶段开始进入 ESP32 最常用的基础外设。目标不是记参数，而是先能把“按键、LED、蜂鸣器、模拟信号”真正跑起来。
 
-## 1. What This Stage Covers
+## 1. 本阶段内容
 
-### 1.1. Order
+### 1.1. 学习顺序
 
 1. [GPIO](./gpio.md)
-2. [ADC and PWM](./adc-and-pwm.md)
-3. [Serial Monitor](./serial-monitor.md)
+2. [ADC 与 PWM](./adc-and-pwm.md)
+3. [串口监视器](./serial-monitor.md)
 
-### 1.2. Learning Goals
+### 1.2. 学习目标
 
-After this stage, learners should be able to:
+完成这一阶段后，学习者应该能够：
 
-1. Control LEDs and relays with GPIO
-2. Read button input and handle debouncing
-3. Use interrupts for external events
-4. Read analog signals and potentiometer values
-5. Use PWM for brightness and motor speed
-6. Use the serial monitor for debugging output
+1. 使用 GPIO 控制 LED 和继电器
+2. 读取按键输入并处理消抖
+3. 使用中断响应外部事件
+4. 读取模拟信号和电位器数据
+5. 使用 PWM 控制亮度和电机速度
+6. 用串口监视器输出调试信息
 
-## 2. Key Ideas
+## 2. 重点概念
 
 ### 2.1. GPIO
 
-GPIO is the main bridge between ESP32 and the outside world.
+GPIO 是 ESP32 和外部世界对话的入口，几乎所有硬件实验都会先从它开始。
 
 ### 2.2. ADC
 
-ADC reads analog values and is useful for potentiometers, light sensors, and analog temperature sensors.
+ADC 用于读取模拟值，适合电位器、光敏电阻、温度类模拟传感器。
 
 ### 2.3. PWM
 
-PWM is used for LED dimming, motor speed, and buzzer tone control.
+PWM 用来控制 LED 亮度、电机速度和蜂鸣器音调。
 
-### 2.4. Serial Debugging
+### 2.4. 串口调试
 
-The serial monitor is the most basic and important debugging tool in early training.
+串口监视器是最基础也最重要的调试工具之一，训练营前期必须熟练使用。

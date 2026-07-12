@@ -1,20 +1,20 @@
-# Common Modules
+# 常见模块
 
-This page gathers common modules used in the training camp so later projects can reference them quickly.
+这一页整理训练营里常见的通用模块，方便后面综合项目引用。
 
-## 1. Common Modules
+## 1. 常见模块
 
-- OLED display
-- Relay module
-- Buzzer module
-- Button module
-- Potentiometer module
-- Infrared receiver
-- Servo module
+- OLED 显示屏
+- 继电器模块
+- 蜂鸣器模块
+- 按键模块
+- 电位器模块
+- 红外接收模块
+- 舵机模块
 
-## 2. Usage Rules
+## 2. 使用原则
 
-1. Check the voltage range first.
-2. Check the pinout first.
-3. Check whether pull-up or pull-down is needed.
-4. Confirm the driver method before adding the module to the main program.
+1. 先确认电压范围。
+2. 先确认引脚定义。
+3. 先确认是否需要上拉或下拉。
+4. 先确认驱动方式，再接到主程序里。

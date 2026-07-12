@@ -1,19 +1,19 @@
-# Project Checklist
+# 项目检查清单
 
-The project checklist helps the training camp confirm whether a project is ready to show, submit, and reproduce.
+项目检查清单用于在训练营中快速确认一个作品是否已经具备可演示、可提交、可复现的基础条件。
 
-## 1. Checklist Items
+## 1. 检查内容
 
-- Is the power stable?
-- Is the wiring correct?
-- Can the program upload successfully?
-- Does the core feature run?
-- Are serial logs clear?
-- Do the modules work together?
-- Is documentation included?
+- 电源是否稳定
+- 接线是否正确
+- 程序是否可上传
+- 核心功能是否可运行
+- 串口日志是否清晰
+- 模块之间是否能联动
+- 是否保留了说明文档
 
-## 2. How to Use It
+## 2. 使用方式
 
-1. Make the list before building.
-2. Tick items during debugging.
-3. Review the full list before delivery.
+1. 开始前先列清单。
+2. 调试时逐条打勾。
+3. 交付前再完整复查一遍。

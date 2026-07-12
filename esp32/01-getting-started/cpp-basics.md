@@ -1,22 +1,22 @@
-# C++ Basics for ESP32
+# ESP32 的 C++ 基础
 
-ESP32 students do not need to become C++ experts first, but they do need the small set of C++ basics that show up everywhere in Arduino projects.
+ESP32 课程不要求学习者先成为 C++ 专家，但至少要先掌握 Arduino 开发里最常用的一组 C++ 基础。
 
-This page focuses only on the parts that learners will use repeatedly: variables, constants, conditions, loops, functions, arrays, structures, and the idea of classes.
+这一页只讲真正会频繁用到的部分，目标是让学习者能看懂示例、改得动代码、能自己写出小功能。
 
-## 1. Why This Comes First
+## 1. 为什么要先学这部分
 
-Arduino code looks short at the beginning. Once a project grows, it quickly needs data handling, repeated logic, modular code, and clean structure.
+Arduino 程序看起来很短，但一旦开始做传感器、通信、状态控制和模块化开发，就会不断用到变量、函数、结构体、类和头文件。
 
-If these basics are missing, students often copy code without understanding it and struggle to debug later.
+如果这些基础不先补上，后面很容易只会“照着抄”，不会真正调试。
 
-## 2. Core Concepts
+## 2. 必备知识
 
-### 2.1. Variables and Data Types
+### 2.1. 变量和数据类型
 
-Variables store data while the program is running.
+变量用来保存程序运行时的数据。
 
-Common types:
+常见类型包括：
 
 - `int`
 - `float`
@@ -30,18 +30,18 @@ float temperature = 26.5;
 bool is_ready = true;
 ```
 
-### 2.2. Constants
+### 2.2. 常量
 
-Values that should not change during runtime should be written as constants.
+不会在运行中改变的值，建议写成常量。
 
 ```cpp
 const int button_pin = 0;
 const unsigned long blink_interval = 1000;
 ```
 
-### 2.3. Conditions
+### 2.3. 条件判断
 
-Conditions let the program choose different actions.
+条件判断用于根据输入决定程序走向。
 
 ```cpp
 if (digitalRead(button_pin) == LOW) {
@@ -51,9 +51,9 @@ if (digitalRead(button_pin) == LOW) {
 }
 ```
 
-### 2.4. Loops
+### 2.4. 循环
 
-Loops repeat work.
+循环用于重复执行任务。
 
 ```cpp
 for (int i = 0; i < 5; i++) {
@@ -61,9 +61,9 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### 2.5. Functions
+### 2.5. 函数
 
-Functions group repeated logic into a reusable block.
+把常用逻辑封装成函数，可以让代码更清楚。
 
 ```cpp
 void blink_led(int pin) {
@@ -74,17 +74,17 @@ void blink_led(int pin) {
 }
 ```
 
-### 2.6. Arrays
+### 2.6. 数组
 
-Arrays store a group of values with the same type.
+数组适合保存一组相同类型的数据。
 
 ```cpp
 int sensor_values[] = {10, 20, 30};
 ```
 
-### 2.7. Structures
+### 2.7. 结构体
 
-Structures bundle related values together.
+结构体适合把相关数据放在一起。
 
 ```cpp
 struct SensorData {
@@ -93,13 +93,13 @@ struct SensorData {
 };
 ```
 
-### 2.8. Classes
+### 2.8. 类
 
-Classes bundle data and behavior together. In early training, learners only need the basic idea.
+类是把数据和行为打包在一起的一种组织方式。训练营前期只需要理解基本概念，不必一开始就写复杂类。
 
-## 3. Arduino Style C++
+## 3. Arduino 里的 C++ 写法
 
-The most common Arduino program structure looks like this:
+Arduino 工程最常见的结构如下：
 
 ```cpp
 const int led_pin = 2;
@@ -116,27 +116,29 @@ void loop() {
 }
 ```
 
-The two most important functions are:
+这里最重要的两个函数是：
 
-- `setup()`: runs once
-- `loop()`: runs repeatedly
+- `setup()`，只执行一次
+- `loop()`，反复执行
 
-## 4. What Learners Should Practice
+## 4. 学习重点
 
-1. Read and write variables and constants.
-2. Use simple `if` statements.
-3. Use simple loops.
-4. Pull repeated code into a function.
-5. Organize data with arrays and structures.
-6. Understand what classes are for.
+学习这部分时，优先掌握以下内容：
 
-## 5. Why It Matters Later
+1. 会看懂变量和常量
+2. 会写简单的 `if`
+3. 会写简单的循环
+4. 会把重复代码提取成函数
+5. 会使用数组和结构体组织数据
+6. 知道类在工程化开发里是干什么的
 
-This foundation helps with:
+## 5. 对后续 ESP32 学习的帮助
 
-- GPIO control
-- Sensor reading
-- Communication wrappers
-- State machines
-- Multi-file projects
-- Modular code design
+这部分学好之后，后面你会更容易理解：
+
+- GPIO 控制
+- 传感器读取
+- 通信协议封装
+- 状态机
+- 多文件工程结构
+- 模块化代码设计

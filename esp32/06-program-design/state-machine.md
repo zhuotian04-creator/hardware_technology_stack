@@ -1,19 +1,19 @@
-# State Machine
+# 状态机
 
-A state machine is a key way to organize ESP32 projects. It works well for buttons, mode switching, process control, and multi-step flows.
+状态机是组织 ESP32 项目的重要方法之一。它特别适合按钮、模式切换、流程控制和多阶段项目。
 
-## 1. Core Idea
+## 1. 核心思想
 
-Split a program into states, and let the program run different logic in different states.
+把程序分成多个状态，让程序在不同状态下执行不同逻辑。
 
-## 2. Example Scenarios
+## 2. 示例场景
 
-- Single click, double click, long press
-- Idle, working, alarm
-- Auto, manual, settings
+- 单击、双击、长按
+- 待机、工作、报警
+- 自动、手动、设置
 
-## 3. Learning Goals
+## 3. 学习目标
 
-1. Know what a state is.
-2. Know how states change.
-3. Understand why this is easier to maintain than a pile of `if` statements.
+1. 知道状态是什么。
+2. 知道状态如何切换。
+3. 知道状态机比一堆 `if` 更好维护。

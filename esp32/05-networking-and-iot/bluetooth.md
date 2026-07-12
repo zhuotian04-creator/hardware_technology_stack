@@ -1,16 +1,16 @@
-# Bluetooth
+# 蓝牙
 
-Bluetooth is useful for short-range communication, device pairing, and phone interaction.
+蓝牙适合近距离通信、设备配网和手机交互。
 
-## 1. Common Uses
+## 1. 常见用途
 
-- Phone control
-- Device pairing
-- Simple data transfer
-- Nearby configuration
+- 手机控制
+- 设备配对
+- 简单数据传输
+- 近距离配置参数
 
-## 2. Learning Goals
+## 2. 学习重点
 
-1. Understand the difference between Bluetooth and Wi-Fi.
-2. Know that Bluetooth is best for close-range scenarios.
-3. See how Bluetooth is often used for setup and auxiliary control.
+1. 知道蓝牙和 Wi-Fi 的差别。
+2. 知道蓝牙更适合近距离场景。
+3. 明白它常用于设备初始化和辅助控制。

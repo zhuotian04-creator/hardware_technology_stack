@@ -1,36 +1,36 @@
-# Program Design
+# 程序设计
 
-At this stage, the course focus shifts from "wire it and control it" to "organize the program". This matters because once a project gets larger, the overall structure matters more than any single function.
+到了这一阶段，课程重点从“会接线、会控制”转向“会组织程序”。这一步很重要，因为项目一复杂，真正决定质量的通常不是单个函数，而是整体结构。
 
-## 1. What This Stage Covers
+## 1. 本阶段内容
 
-### 1.1. Order
+### 1.1. 学习顺序
 
-1. [Millis Timing](./millis-timing.md)
-2. [State Machine](./state-machine.md)
-3. [Project Structure](./project-structure.md)
-4. [Debugging](./debugging.md)
+1. [Millis 计时](./millis-timing.md)
+2. [状态机](./state-machine.md)
+3. [项目结构](./project-structure.md)
+4. [调试方法](./debugging.md)
 
-### 1.2. Learning Goals
+### 1.2. 学习目标
 
-After this stage, learners should be able to:
+完成这一阶段后，学习者应该能够：
 
-1. Write non-blocking logic with `millis()`
-2. Manage complex flow with state machines
-3. Split a project into multiple files and modules
-4. Build a clear debugging routine
-5. Prepare for larger integrated projects
+1. 用 `millis()` 写非阻塞逻辑
+2. 用状态机管理复杂流程
+3. 把一个项目拆成多个文件和模块
+4. 建立清晰的调试流程
+5. 为后面的综合项目做结构准备
 
-## 2. Key Focus
+## 2. 课程重点
 
-### 2.1. Non-Blocking Code
+### 2.1. 非阻塞代码
 
-Try to reduce `delay()` usage.
+尽量减少 `delay()` 的使用。
 
-### 2.2. State Machines
+### 2.2. 状态机
 
-Split complicated flows into manageable states.
+把复杂流程拆成多个可管理状态。
 
-### 2.3. Modularity
+### 2.3. 模块化
 
-Keep a project expandable instead of turning it into one giant file.
+让一个项目能继续扩展，而不是越写越乱。

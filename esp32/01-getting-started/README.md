@@ -1,37 +1,37 @@
-# Getting Started
+# 入门准备
 
-This stage helps learners get ESP32 running as quickly as possible and build the most basic code and hardware concepts.
+这一阶段的目标很简单: 让学习者尽快把 ESP32 跑起来，并建立最基本的代码和硬件概念。
 
-If this stage is solid, everything later, including GPIO, sensors, communication, and networking, becomes much easier.
+如果这一阶段完成得扎实，后面的 GPIO、传感器、通信协议和联网内容都会顺很多。
 
-## 1. What This Stage Covers
+## 1. 本阶段内容
 
-### 1.1. Order
+### 1.1. 学习顺序
 
-1. [C++ Basics for ESP32](./cpp-basics.md)
-2. [Arduino IDE Setup](./arduino-ide.md)
-3. [ESP32 Basics](./esp32-basics.md)
+1. [ESP32 的 C++ 基础](./cpp-basics.md)
+2. [Arduino IDE 安装与配置](./arduino-ide.md)
+3. [ESP32 基础认知](./esp32-basics.md)
 
-### 1.2. What Learners Will Gain
+### 1.2. 你会学到什么
 
-- Basic C++ syntax used in Arduino projects
-- Arduino IDE 2.x setup and configuration
-- Adding ESP32 board support
-- Serial port connection, compilation, and upload
-- Basic ideas about power, logic level, and pins
+- C++ 在 Arduino 工程里的基本写法
+- Arduino IDE 2.x 的安装和配置
+- ESP32 开发板支持包的添加
+- 串口连接、编译和上传
+- 开发板供电、电平和引脚的基础概念
 
-## 2. Learning Advice
+## 2. 学习建议
 
-1. Read `cpp-basics.md` first to build code foundations.
-2. Then read `arduino-ide.md` to set up the environment.
-3. Finally read `esp32-basics.md` to understand the board itself.
+1. 先看 `cpp-basics.md`，补齐代码基础。
+2. 再看 `arduino-ide.md`，把环境搭起来。
+3. 最后看 `esp32-basics.md`，认识开发板本身。
 
-## 3. Completion Check
+## 3. 学完后的检查点
 
-After this stage, a learner should be able to:
+完成这一阶段后，学习者应该能：
 
-1. Explain what `setup()` and `loop()` do.
-2. Configure Arduino IDE and the ESP32 support package.
-3. Upload a simple blink program successfully.
-4. Use the serial monitor in a basic way.
-5. Identify a few safe pins for early experiments.
+1. 说清楚 `setup()` 和 `loop()` 的作用。
+2. 自己配置好 Arduino IDE 和 ESP32 支持包。
+3. 成功上传一个最简单的闪灯程序。
+4. 知道串口监视器的基本用途。
+5. 了解哪些 ESP32 引脚可以先优先拿来做实验。

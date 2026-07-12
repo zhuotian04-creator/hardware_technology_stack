@@ -1,25 +1,25 @@
 # SPI
 
-SPI is a fast communication protocol commonly used with display modules, SD cards, and some high-speed sensors.
+SPI 适合高速通信场景，常见于显示屏、SD 卡和部分高速传感器。
 
-## 1. Basic Idea
+## 1. 基本概念
 
-SPI often uses these lines:
+SPI 常见信号线包括：
 
 - `MOSI`
 - `MISO`
 - `SCK`
 - `CS`
 
-## 2. Typical Applications
+## 2. 典型应用
 
-- TFT displays
-- SD cards
-- High-speed sensors
+- TFT 显示屏
+- SD 卡
+- 高速传感器
 
-## 3. Learning Goals
+## 3. 学习目标
 
-1. Understand master and slave roles.
-2. Understand the purpose of `CS`.
-3. Know that SPI is usually faster than I2C.
-4. Recognize common wiring mistakes.
+1. 明白主设备和从设备。
+2. 明白 `CS` 的作用。
+3. 知道 SPI 一般比 I2C 更快。
+4. 知道接线错误时常见的表现。

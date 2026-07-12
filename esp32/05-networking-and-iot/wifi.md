@@ -1,27 +1,27 @@
 # Wi-Fi
 
-Wi-Fi is one of the most representative ESP32 features. In the training camp, the first goal is simply to get the board online.
+Wi-Fi 是 ESP32 最有代表性的能力之一。训练营里最先要做的，是让开发板连上网络。
 
-## 1. Common Modes
+## 1. 常见模式
 
-### 1.1. STA Mode
+### 1.1. STA 模式
 
-Connects to a router or hotspot.
+连接到路由器或热点。
 
-### 1.2. AP Mode
+### 1.2. AP 模式
 
-ESP32 creates its own hotspot for a phone or computer to connect to directly.
+ESP32 自己开热点，供手机直接连接。
 
-## 2. Common Uses
+## 2. 常见用途
 
-- Fetch weather data
-- Sync network time
-- Connect to IoT platforms
-- Remote control
+- 获取天气数据
+- 同步网络时间
+- 对接物联网平台
+- 远程控制设备
 
-## 3. Learning Goals
+## 3. 学习重点
 
-1. Connect to a network.
-2. Check connection status.
-3. Understand that "connected" is not the end.
-4. Reconnect after disconnection.
+1. 会连接网络。
+2. 会检查连接状态。
+3. 知道“连上网”不是结束。
+4. 知道掉线后要重连。

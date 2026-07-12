@@ -1,34 +1,34 @@
-# Sensors and Actuators
+# 传感器与执行器
 
-This stage connects "reading data" and "doing something" into one loop. After learners reach here, ESP32 is no longer just a blinking board; it starts to behave like a real smart hardware controller.
+这一阶段把“读数据”和“做动作”连起来。训练营做到这里，ESP32 就不再只是会闪灯，而是开始像一个真正的智能硬件控制器。
 
-## 1. What This Stage Covers
+## 1. 本阶段内容
 
-### 1.1. Order
+### 1.1. 学习顺序
 
-1. [Sensors](./sensors.md)
-2. [Actuators](./actuators.md)
-3. [Common Modules](./common-modules.md)
+1. [传感器](./sensors.md)
+2. [执行器](./actuators.md)
+3. [常见模块](./common-modules.md)
 
-### 1.2. Learning Goals
+### 1.2. 学习目标
 
-After this stage, learners should be able to:
+完成这一阶段后，学习者应该能够：
 
-1. Read temperature, distance, and motion sensors
-2. Control relays, servos, motors, and buzzers
-3. Connect common modules and complete basic integration
-4. Understand how sensor data drives actuator behavior
+1. 读取温湿度、距离、姿态等常见传感器
+2. 控制继电器、舵机、电机和蜂鸣器
+3. 连接常见的开发模块并完成基本联调
+4. 理解传感器数据如何驱动执行器动作
 
-## 2. Key Ideas
+## 2. 课程重点
 
-### 2.1. Sensors
+### 2.1. 传感器
 
-Sensors convert the outside world into data.
+传感器负责把外界状态转换成数字信息。
 
-### 2.2. Actuators
+### 2.2. 执行器
 
-Actuators convert program commands into physical action.
+执行器负责把程序指令转成实际动作。
 
-### 2.3. Closed Loop
+### 2.3. 闭环
 
-Real projects are not just "read one value" or "turn on one LED". They connect input and output into a closed loop.
+真正的项目不是“单独读一个值”或“单独点一个灯”，而是把输入和输出串起来形成闭环。

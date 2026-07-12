@@ -1,27 +1,27 @@
-# Actuators
+# 执行器
 
-Actuators turn ESP32 control signals into action in the real world.
+执行器负责把 ESP32 的控制信号变成现实世界中的动作。
 
-## 1. Common Actuators
+## 1. 常见执行器
 
-### 1.1. Relay
+### 1.1. 继电器
 
-Useful for fans, lights, pumps, and other higher-power loads.
+适合控制风扇、灯、泵等较大功率负载。
 
-### 1.2. Servo
+### 1.2. 舵机
 
-Useful for angle control, robot arms, and pointing mechanisms.
+适合做角度控制、机械臂、指向机构。
 
-### 1.3. DC Motor
+### 1.3. 直流电机
 
-Useful for fans, small vehicles, and any continuously rotating mechanism.
+适合风扇、小车、传送结构等需要连续旋转的场景。
 
-### 1.4. Stepper Motor
+### 1.4. 步进电机
 
-Useful when position control matters.
+适合需要较精确位置控制的场景。
 
-## 2. Important Points
+## 2. 重要提示
 
-1. Control signal and load power are not the same thing.
-2. Driver chips are often necessary.
-3. Do not let a GPIO pin directly drive a large current device.
+1. 控制信号和负载电源不是一回事。
+2. 驱动芯片通常是必要的。
+3. 不要让 GPIO 直接去带大电流设备。
