@@ -47,6 +47,8 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 4. 点击 `Install`
 5. 等待安装完成
 
+本课程示例按 `Arduino-ESP32 Core 3.x` 编写。旧版 `2.x` 在 PWM、定时器和 BLE 等接口上存在差异，建议统一课程环境；维护旧项目时可参考 [官方 2.x 到 3.0 迁移指南](https://docs.espressif.com/projects/arduino-esp32/en/latest/migration_guides/2.x_to_3.0.html)。
+
 ## 3. 选择开发板和串口
 
 ### 3.1. 选择开发板
@@ -102,4 +104,4 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 1. Arduino IDE 能正常识别 ESP32 开发板。
 2. 你能成功上传一个最简单的示例程序。
 
-完成后再进入 `[ESP32 基础认知](./esp32-basics.md)`，学习开发板本身的硬件结构和引脚概念。
+完成后再进入 [ESP32 基础认知](./esp32-basics.md)，学习开发板本身的硬件结构和引脚概念。

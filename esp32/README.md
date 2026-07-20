@@ -4,7 +4,7 @@
 
 课程从基础编程、开发环境、GPIO、传感器和通信协议开始，逐步扩展到网络连接、程序设计和综合项目开发。`山海灵兽纪` 只是其中一个综合应用案例，不是课程边界。
 
-默认教学路线使用 `Arduino IDE 2.x + Arduino Framework`，先帮助初学者快速获得反馈，再根据项目复杂度逐步过渡到 `PlatformIO` 和 `ESP-IDF`。
+默认教学路线使用 `Arduino IDE 2.x + Arduino-ESP32 Core 3.x + Arduino Framework`，先帮助初学者快速获得反馈，再根据项目复杂度逐步过渡到 `PlatformIO` 和 `ESP-IDF`。
 
 ## 1. 课程定位
 

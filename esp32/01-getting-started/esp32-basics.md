@@ -89,7 +89,7 @@ ESP32 开发板一般会通过以下方式供电：
 
 接下来最适合进入：
 
-- `[Arduino IDE 安装与配置](./arduino-ide.md)`
-- `[ESP32 的 C++ 基础](./cpp-basics.md)`
+- [Arduino IDE 安装与配置](./arduino-ide.md)
+- [ESP32 的 C++ 基础](./cpp-basics.md)
 
 先把环境和代码基础打通，再进入 GPIO 和外设学习会更稳。
