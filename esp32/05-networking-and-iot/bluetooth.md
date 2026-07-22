@@ -73,12 +73,25 @@ BLE 不是普通无线串口，它通常按下面的层级组织数据：
 #define VALUE_UUID   "beb5483e-36e1-4688-b7f5-ea07361b26a8"
 
 BLECharacteristic* sensorValue;
+bool deviceConnected = false;
+
+class ConnectionCallbacks : public BLEServerCallbacks {
+  void onConnect(BLEServer* server) {
+    deviceConnected = true;
+  }
+
+  void onDisconnect(BLEServer* server) {
+    deviceConnected = false;
+    server->startAdvertising();
+  }
+};
 
 void setup() {
   Serial.begin(115200);
   BLEDevice::init("ESP32-BLE");
 
   BLEServer* server = BLEDevice::createServer();
+  server->setCallbacks(new ConnectionCallbacks());
   BLEService* service = server->createService(SERVICE_UUID);
 
   sensorValue = service->createCharacteristic(
@@ -102,7 +115,9 @@ void loop() {
 
     String value = String(analogRead(34));
     sensorValue->setValue(value.c_str());
-    sensorValue->notify();
+    if (deviceConnected) {
+      sensorValue->notify();
+    }
   }
 }
 ```
